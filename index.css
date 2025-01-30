@@ -12,11 +12,11 @@ body {
 .content {
     position: absolute;
     color: white;
-    top: 60%; /* Moves text down for better positioning */
+    top: 50%; /* Moves text down for better positioning */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Georgia', serif;
     width: 100%; /* Ensures full-width for better centering */
 }
@@ -46,5 +46,5 @@ button:hover {
 }
 
 #gif {
-    width: 400px; /* Adjusted size for better visibility */
+    width: 250px; /* Adjusted size for better visibility */
 }
