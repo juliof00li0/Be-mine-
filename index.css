@@ -1,99 +1,51 @@
 body {
-
     background-image: url('istockphoto-983593014-612x612.jpg');
-
     background-size: 50%;
-
     background-position: center;
-
     background-attachment: fixed;
-
-    font-family: 'Georgia', serif; /* Same font as the heading */
-
+    font-family: 'Georgia', serif;
     margin: 0;
-
     padding: 0;
-
 }
 
+/* Centering text at the top middle */
 .content {
-
     position: absolute;
     color: white;
-    top: 10%; /* Moves text closer to the top */
-    left: 50%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Ensures proper centering */
-    text-align: center; /* Aligns text to center */
+    top: 20%; /* Moves text down for better positioning */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     font-size: 40px;
     font-family: 'Georgia', serif;
+    width: 100%; /* Ensures full-width for better centering */
 }
+
+/* Make buttons larger */
 .buttons {
     margin-top: 20px;
 }
-button{
- font-size: 24px; /* Makes buttons larger */
-    padding: 15px 30px; /* Increases button size */
+
+button {
+    font-size: 28px; /* Increase button text size */
+    padding: 18px 35px; /* Increase button size */
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
 }
+
 button:hover {
-    background-color: pink; /* Adds a hover effect */
+    background-color: pink;
 }
 
-h1 {
-
-    margin: 0;
-
-    padding: 0;
-
-}
-
-.checkboxes {
-
-    margin-top: 20px;
-
-    font-size: 40%; /* Adjusted size for checkboxes */
-
-}
-
-
-
-input[type="checkbox"] {
-
-    margin-right: 10px;
-
-    cursor: pointer;
-
-    transform: scale(2); /* Makes checkboxes larger */
-
-}
-
-
-
-label {
-
-    margin-right: 30px;
-
-    cursor: pointer;
-
-    font-family: 'Georgia', serif; /* Ensures the label has the same font as the question */
-
-}
-
-
+/* Ensuring GIF is centered below the text */
 #gif-container {
-     
-    margin-top: 50px; /* Adds space between text and GIF */
-    text-align: left; /* Aligns with text */
+    margin-top: 60px; /* Adds space between text and GIF */
+    text-align: center; /* Centers the GIF */
 }
-
 
 #gif {
-
-    width: 450px; /* Adjust size for visibility */
+    width: 500px; /* Adjusted size for better visibility */
     height: auto;
-
 }
-
