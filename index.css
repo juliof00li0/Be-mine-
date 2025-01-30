@@ -19,19 +19,27 @@ body {
 .content {
 
     position: absolute;
-
     color: white;
-
-    top: 50%;
-
-    left: 5%;
-
-    transform: translateY(-50%);
-
+    top: 10%; /* Moves text closer to the top */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Ensures proper centering */
+    text-align: center; /* Aligns text to center */
     font-size: 40px;
-
-    font-family: 'Georgia', serif; /* Same font as the heading */
-
+    font-family: 'Georgia', serif;
+}
+.buttons {
+    margin-top: 20px;
+}
+button{
+ font-size: 24px; /* Makes buttons larger */
+    padding: 15px 30px; /* Increases button size */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: pink; /* Adds a hover effect */
 }
 
 h1 {
@@ -76,18 +84,15 @@ label {
 
 
 #gif-container {
-
-    margin-top: 30px;
-
-    text-align: center;
-
+     
+    margin-top: 50px; /* Adds space between text and GIF */
+    text-align: left; /* Aligns with text */
 }
 
 
 #gif {
 
-    width: 100%;
-    max-width: 430px;  /* Adjust the size of the GIF */
+    width: 450px; /* Adjust size for visibility */
     height: auto;
 
 }
