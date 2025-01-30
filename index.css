@@ -12,7 +12,7 @@ body {
 .content {
     position: absolute;
     color: white;
-    top: 20%; /* Moves text down for better positioning */
+    top: 50%; /* Moves text down for better positioning */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -28,7 +28,7 @@ body {
 
 button {
     font-size: 28px; /* Increase button text size */
-    padding: 18px 35px; /* Increase button size */
+    padding: 15px 35px; /* Increase button size */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -41,11 +41,10 @@ button:hover {
 
 /* Ensuring GIF is centered below the text */
 #gif-container {
-    margin-top: 60px; /* Adds space between text and GIF */
+   /* Adds space between text and GIF */
     text-align: center; /* Centers the GIF */
 }
 
 #gif {
     width: 500px; /* Adjusted size for better visibility */
-    height: auto;
 }
