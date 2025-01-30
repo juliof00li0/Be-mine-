@@ -1,0 +1,94 @@
+body {
+
+    background-image: url('istockphoto-983593014-612x612.jpg');
+
+    background-size: 50%;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+    font-family: 'Georgia', serif; /* Same font as the heading */
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.content {
+
+    position: absolute;
+
+    color: white;
+
+    top: 50%;
+
+    left: 5%;
+
+    transform: translateY(-50%);
+
+    font-size: 40px;
+
+    font-family: 'Georgia', serif; /* Same font as the heading */
+
+}
+
+h1 {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.checkboxes {
+
+    margin-top: 20px;
+
+    font-size: 40%; /* Adjusted size for checkboxes */
+
+}
+
+
+
+input[type="checkbox"] {
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    transform: scale(2); /* Makes checkboxes larger */
+
+}
+
+
+
+label {
+
+    margin-right: 30px;
+
+    cursor: pointer;
+
+    font-family: 'Georgia', serif; /* Ensures the label has the same font as the question */
+
+}
+
+
+#gif-container {
+
+    margin-top: 30px;
+
+    text-align: center;
+
+}
+
+
+#gif {
+
+    width: 300px;  /* Adjust the size of the GIF */
+
+    height: auto;
+
+}
+

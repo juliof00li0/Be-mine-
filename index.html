@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Be My Valentine?</title>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Be My Valentine? 💖</h1>
+
+        <div class="buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+
+        <!-- GIF that appears when "Yes" is clicked -->
+        <div id="gif-container" style="display:none;">
+            <img src="jumping-gatito.gif" alt="Happy Valentine Gif" id="gif">
+        </div>
+    </div>
+
+    <script>
+        // Get button and GIF container references
+        const yesBtn = document.getElementById('yes-btn');
+        const noBtn = document.getElementById('no-btn');
+        const gifContainer = document.getElementById('gif-container');
+
+        // Click event for "Yes"
+        yesBtn.addEventListener('click', function() {
+            gifContainer.style.display = 'block';  // Show GIF
+            noBtn.disabled = true;  // Disable "No"
+        });
+
+        // Click event for "No"
+        noBtn.addEventListener('click', function() {
+            gifContainer.style.display = 'none';  // Hide GIF
+            yesBtn.disabled = true;  // Disable "Yes"
+        });
+    </script>
+
+</body>
+</html>
