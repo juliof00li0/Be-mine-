@@ -48,3 +48,12 @@ button:hover {
 #gif {
     width: 250px; /* Adjusted size for better visibility */
 }
+
+/* Added: Ensuring "No" GIF is centered below the text */
+#no-gif-container {
+    text-align: center;
+}
+
+#no-gif {
+    width: 250px; /* Adjusted size for better visibility */
+}
