@@ -14,31 +14,49 @@
         <div class="buttons">
             <button id="yes-btn">Yes</button>
             <button id="no-btn">No</button>
-        </div>
 
+        </div>
         <!-- GIF that appears when "Yes" is clicked -->
         <div id="gif-container" style="display:none;">
             <img src="jumping-gatito.gif" alt="Happy Valentine Gif" id="gif">
         </div>
-    </div>
 
+         <!-- New GIF that appears when "No" is clicked -->
+         <div id="no-gif-container" style="display:none;">  <!-- Added -->
+            <img src="44q71xe7j4ey.gif" alt="sad Valentine Gif" id="no-gif">  <!-- Added -->
+        </div>  
+
+    </div>
+<!-- Audio that plays when "Yes" is clicked -->
+<audio id="valentine-sound">
+    <source src="RPReplay_Final1738268536.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+</div>
     <script>
+         document.addEventListener("DOMContentLoaded", function() { 
         // Get button and GIF container references
         const yesBtn = document.getElementById('yes-btn');
         const noBtn = document.getElementById('no-btn');
         const gifContainer = document.getElementById('gif-container');
+        const nogifContainer = document.getElementById('no-gif-container'); // Added
+
+            // Get the audio element reference
+            const valentineSound = document.getElementById('valentine-sound');
 
         // Click event for "Yes"
         yesBtn.addEventListener('click', function() {
             gifContainer.style.display = 'block';  // Show GIF
             noBtn.disabled = true;  // Disable "No"
+            valentineSound.play();  // Play the sound when "Yes" is clicked
         });
 
         // Click event for "No"
         noBtn.addEventListener('click', function() {
-            gifContainer.style.display = 'none';  // Hide GIF
+            nogifContainer.style.display = 'block';  // Hide GIF
             yesBtn.disabled = true;  // Disable "Yes"
         });
+    }); 
     </script>
 
 </body>
